@@ -8,7 +8,6 @@ from airflow.providers.http.operators.http import SimpleHttpOperator
 
 # Import Modules for code
 import json
-import requests
 
 # import custom transformer for API data
 from transformer import transform_weatherAPI
@@ -20,6 +19,7 @@ from transformer import transform_weatherAPI
     catchup=False,                                      # no catchup needed, because we are running an api that returns now values
     tags=['LearnDataEngineering'],                      # tag the DAQ so it's easy to find in AirflowUI
 )
+
 def SimpleHTTPTest():
     """
     ### TaskFlow API Tutorial Documentation
@@ -31,7 +31,6 @@ def SimpleHTTPTest():
     """
 
     # EXTRACT: Query the data from the Weather API
-
     # TODO: Change the API Key to your key!!
     extract_task = SimpleHttpOperator(
         task_id="extract_data",
