@@ -18,7 +18,7 @@ def my_extract(**kwargs):
     # TODO: Change the API Key to your key!!
 
     #Fetch the data from an API and print it
-    payload = {'Key': '5a91e86eedc148059a390511211510', 'q': 'Berlin', 'aqi': 'no'}
+    payload = {'Key': '47d0f28fb3f84465bae92844252605', 'q': 'Berlin', 'aqi': 'no'}
     r = requests.get("http://api.weatherapi.com/v1/current.json", params=payload)
 
     # Get the json
