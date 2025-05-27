@@ -37,7 +37,7 @@ def SimpleHTTPTest():
         http_conn_id='WeatherAPI',
         method="GET",
         endpoint="/v1/current.json",
-        data={'Key': '2b4b5ddd923643fe9cf150326230507', 'q': 'Cairo', 'aqi': 'no'},
+        data={'Key': '47d0f28fb3f84465bae92844252605', 'q': 'Cairo', 'aqi': 'no'},
         response_filter=lambda response: response.json()
     )
 
